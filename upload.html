@@ -1,0 +1,33 @@
+<!doctype html>
+<title>Python Flask File Upload Example</title>
+<h2>Please Fill Out the Following Form</h2>
+<p>
+	  <body>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         
+         Name<br>
+         <input type = "text" name = "nm" /></br>
+
+          Student Number<br>
+         <input type = "text" name = "city" /><br>
+         
+         Comments <br>
+         <textarea name = "add" ></textarea><br>
+         
+         
+      </form>
+   </body>
+
+ </p>
+Upload a Photo I.D for Verification <br>
+
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
